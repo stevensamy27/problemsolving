@@ -1,4 +1,6 @@
-N, M, A = list(input("Enter a three value: ").split() )
+N = int(input ("Width of theater = ",))
+M = int(input ("height of theater =",))  
+A = int(input("flagstone =", ))
 x = N/A
 z = M/A
 
