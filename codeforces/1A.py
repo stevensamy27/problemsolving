@@ -1,6 +1,4 @@
-N = int(input ("Width of theater = ",))
-M = int(input ("height of theater =",))  
-A = int(input("flagstone =", ))
+N, M, A = int(input())
 x = N/A
 z = M/A
 

@@ -2,7 +2,6 @@ N = input()
 def IS_UNIQUE(str):
 
 	a = set(str)
-
 	return len(a)
 
 if __name__ == "__main__":
