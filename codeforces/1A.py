@@ -1,4 +1,4 @@
-N, M, A = int(input())
+N, M, A = list(input("Enter a three value: ").split() )
 x = N/A
 z = M/A
 
