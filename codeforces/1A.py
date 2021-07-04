@@ -1,12 +1,5 @@
-N = int(input ("Width of theater = ",))
-M = int(input ("height of theater =",))  
-A = int(input("flagstone =", ))
-x = N/A
-z = M/A
+import math
+N, M, A = [int(a) for a  in input().split()] 
 
-if N%A != 0:
-    x=x+1
-if M%A != 0:
-    z=z+1
-
-print(z+x-1)
+x,z = N/A, M/A
+print(math.ceil(x) * math.ceil(z))
