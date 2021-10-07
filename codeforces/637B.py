@@ -38,12 +38,14 @@ for i in range(x):
     y = str(input())
 
     if y in my_list:
-        print("hey") 
+       my_list.insert(0,y) 
 
     my_list.append(y)
 
-print(my_list)        
-for name in my_list:    
-    print(name)   
+my_new_list = list(dict.fromkeys(my_list))
 
+# print(my_new_list)
+# print(my_list)        
+for name in my_new_list:    
+    print(name)   
 
