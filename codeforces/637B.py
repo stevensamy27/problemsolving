@@ -32,20 +32,48 @@ output:
     alex
 '''
 
+# x = int(input())
+# my_list=[]
+# for i in range(x):
+#     y = str(input())
+
+#     if y in my_list:
+#         my_list.insert(0,y) 
+
+#     my_list.append(y)
+
+
+# my_new_list = list(dict.fromkeys(my_list))
+
+# # print(my_new_list)
+# # print(my_list)        
+# for name in my_new_list:    
+#     print(name)   
+
+
 x = int(input())
 my_list=[]
 for i in range(x):
     y = str(input())
-
-    if y in my_list:
-       my_list.insert(0,y) 
-
     my_list.append(y)
+my_list.reverse()
 
-my_new_list = list(dict.fromkeys(my_list))
+res = []
+[res.append(x) for x in my_list if x not in res]
 
-# print(my_new_list)
-# print(my_list)        
-for name in my_new_list:    
-    print(name)   
+for name in res:    
+    print(name)  
 
+
+
+# test_list = [1, 3, 5, 6, 3, 5, 6, 1]
+# print ("The original list is : " +  str(test_list))
+  
+
+# res = []
+# for i in test_list:
+#     if i not in res:
+#         res.append(i)
+  
+# # printing list after removal 
+# print ("The list after removing duplicates : " + str(res))
