@@ -30,50 +30,69 @@ output:
     ivan
     roman
     alex
-'''
+ 
 
-# x = int(input())
-# my_list=[]
-# for i in range(x):
-#     y = str(input())
-
-#     if y in my_list:
-#         my_list.insert(0,y) 
-
-#     my_list.append(y)
-
-
-# my_new_list = list(dict.fromkeys(my_list))
-
-# # print(my_new_list)
-# # print(my_list)        
-# for name in my_new_list:    
-#     print(name)   
-
-
+#inputs
 x = int(input())
 my_list=[]
+
+# to add the inputs in a list
 for i in range(x):
     y = str(input())
     my_list.append(y)
+
+# to reverse the list 
 my_list.reverse()
 
+# make another list with out duplications 
 res = []
-[res.append(x) for x in my_list if x not in res]
+for i in my_list:
+    if i not in res:
+        res.append(i)
 
+#print values witheoyt list
 for name in res:    
     print(name)  
 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 
+# # # # # # # another solution but smaller (not formal code) # # # # # # # #    
 
-# test_list = [1, 3, 5, 6, 3, 5, 6, 1]
-# print ("The original list is : " +  str(test_list))
-  
+#inputs
+x = int(input())
+my_list=[]
 
-# res = []
-# for i in test_list:
-#     if i not in res:
-#         res.append(i)
-  
-# # printing list after removal 
-# print ("The list after removing duplicates : " + str(res))
+# to add the inputs in a list
+for i in range(x):
+    y = str(input())
+    my_list.append(y)
+
+# to reverse the list
+my_list.reverse()
+
+# make another list with out duplications ( in one line )
+res = []
+[res.append(x) for x in my_list if x not in res]
+
+#print values witheoyt list
+for name in res:    
+    print(name) 
+
+    
+
+'''
+
+x = int(input())
+ 
+setter = set()
+output = list()
+for i in range(x):
+    y = str(input())
+    output.append(y)
+ 
+ 
+for i in range(x, 0 , -1):
+    val = output[i- 1]
+    if val not in setter:
+        print(val)
+        setter.add(val)
