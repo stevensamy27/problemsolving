@@ -10,6 +10,8 @@ for i in array:
 
 print(day - 1)
 
+
+
 # x = int(input())
 # y = [int(x) for x in input().split()]
 # output = set()

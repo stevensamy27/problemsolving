@@ -10,8 +10,8 @@ for i in a:
         print(i )
         index = a.index(i)
         if index > 0:
-            x = a.index[index] - 1
-            print (x)
+            x = index - 1
+            print (x)   
             if x == i-1:
                 print(i , i-1)
                 print("yes")  
